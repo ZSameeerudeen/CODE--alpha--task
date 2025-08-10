@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link rel="stylesheet" href="player.css">
+</head>
+<body>
+    <div class="container">
+        <div class="thumbnail">
+            <img src="images/disk.png" id="musicIcon" width="200px">
+
+        </div>
+        <div class="player">
+            <div class="song-title" id="songTitle">your song title</div>
+            <input type="range" id="songSlider" onclick="jump();" class="song-level">
+            <div class="timestamp">
+                <div id="currentTime">00:00</div>
+                <div id="totalTime">00:00</div>
+            </div>
+            <div class="controls">
+                <img src="images/previous.png" onclick="previousSong();" width="30">
+               
+                <img id="toggleButton" src="images/play.png" onclick="toggleplay();" width="30" height="31">
+                
+                <img src="images/next.png" onclick="nextSong();" width="30">
+            </div>
+           <div class="volume-controller">
+            <div id="nextSongTitle" class="song-titile"> UP NEXT: your next song</div>
+           </div>
+    </div>
+    <script src="player.js"> </script>
+
+</body>
+</html>
